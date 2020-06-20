@@ -16,14 +16,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B35E7EBEEA27E2800DC6210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11107C420EE5D631112FF9F0 /* ScreenBroadcasting.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = ScreenBroadcasting.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F41B7BF4EE66E0C2E25EABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A48A509C98A955434B427A31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		325824E9A432E7C6A9412156 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0B35E7EBEEA27E2800DC6210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FF92D3664AB4F4AEAB6D372C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		81EA14FB675FDF948BAD7155 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A48A509C98A955434B427A31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F731A49786C1534EBE5A501C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF92D3664AB4F4AEAB6D372C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,14 +43,6 @@
 				5F084DC9992027756CDFB07F /* ScreenBroadcasting */,
 				B4762D0A4B2DDA9407666EE2 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		B4762D0A4B2DDA9407666EE2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				11107C420EE5D631112FF9F0 /* ScreenBroadcasting.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		5F084DC9992027756CDFB07F /* ScreenBroadcasting */ = {
@@ -73,6 +65,14 @@
 				FF92D3664AB4F4AEAB6D372C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B4762D0A4B2DDA9407666EE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11107C420EE5D631112FF9F0 /* ScreenBroadcasting.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
