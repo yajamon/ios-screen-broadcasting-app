@@ -1,0 +1,7 @@
+name: ScreenBroadcasting
+
+targets:
+  ScreenBroadcasting:
+    type: application
+    platform: iOS
+    sources: ScreenBroadcasting
