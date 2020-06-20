@@ -1,5 +1,9 @@
 name: ScreenBroadcasting
 
+options:
+  deploymentTarget:
+    iOS: 13.5
+
 targets:
   ScreenBroadcasting:
     type: application
@@ -9,3 +13,4 @@ targets:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yajamon.sandbox.$(PRODUCT_NAME)
         ENABLE_PREVIEWS: YES
+        CODE_SIGN_STYLE: Automatic
