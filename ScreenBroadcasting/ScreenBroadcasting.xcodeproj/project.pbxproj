@@ -26,16 +26,6 @@
 		FF92D3664AB4F4AEAB6D372C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFrameworksBuildPhase section */
-		C2173AFD249E7BAB003497EA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
 /* Begin PBXGroup section */
 		32D475803E6C5A61EEDA5521 = {
 			isa = PBXGroup;
@@ -82,7 +72,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E3664A978FAC18728B7E47F2 /* Build configuration list for PBXNativeTarget "ScreenBroadcasting" */;
 			buildPhases = (
-				C2173AFD249E7BAB003497EA /* Frameworks */,
 				484927008805E4ACAE1A3808 /* Sources */,
 				FFA479BD6F2936346639320D /* Resources */,
 			);
