@@ -1,3 +1,5 @@
+# XcodeGen Spec のドキュメントは以下を確認する。
+# https://github.com/yonaskolb/XcodeGen/blob/master/Docs/ProjectSpec.md
 name: ScreenBroadcasting
 
 options:
