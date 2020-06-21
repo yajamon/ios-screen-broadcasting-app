@@ -102,8 +102,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				ORGANIZATIONNAME = Yajamon;
 				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = Yajamon;
 				TargetAttributes = {
 					C2173AFF249E7BAB003497EA = {
 						CreatedOnToolsVersion = 11.5;
