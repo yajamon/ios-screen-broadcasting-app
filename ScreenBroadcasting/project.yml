@@ -9,12 +9,62 @@ targets:
     type: application
     platform: iOS
     sources: ScreenBroadcasting
+    dependencies:
+      - target: Upload
+      - target: UploadSetupUI
     settings:
       base:
         PRODUCT_BUNDLE_IDENTIFIER: com.yajamon.sandbox.$(PRODUCT_NAME)
         ENABLE_PREVIEWS: YES
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_ASSET_PATHS: "\"ScreenBroadcasting/Preview Content\""
+        ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES: YES
+  Upload:
+    templates:
+      - AppExtension
+    sources: Upload
+    dependencies:
+      - sdk: ReplayKit.framework
+    settings:
+      base:
+        PRODUCT_NAME: $(TARGET_NAME)
+        PRODUCT_BUNDLE_IDENTIFIER: com.yajamon.sandbox.ScreenBroadcasting.Upload
+  UploadSetupUI:
+    templates:
+      - AppExtension
+    sources: UploadSetupUI
+    dependencies:
+      - sdk: UIKit.framework
+      - sdk: ReplayKit.framework
+    settings:
+      base:
+        PRODUCT_NAME: $(TARGET_NAME)
+        PRODUCT_BUNDLE_IDENTIFIER: com.yajamon.sandbox.ScreenBroadcasting.UploadSetupUI
 
 attributes:
   ORGANIZATIONNAME: Yajamon
+
+targetTemplates:
+  AppExtension:
+    type: app-extension
+    platform: iOS
+    settings:
+      base:
+        CLANG_ENABLE_OBJC_WEAK: YES
+        CODE_SIGN_IDENTITY: "iPhone Developer"
+        CODE_SIGN_STYLE: Automatic
+        # 再現させてるけど本当に必要？枠
+        MTL_FAST_MATH: YES
+        SKIP_INSTALL: YES
+        SWIFT_VERSION: 5.0
+      configs:
+        Debug:
+          # 再現させてるけど本当に必要？枠
+          MTL_ENABLE_DEBUG_INFO: INCLUDE_SOURCE
+          GCC_PREPROCESSOR_DEFINITIONS:
+            - DEBUG=1
+            - $(inherited)
+        Release:
+          SWIFT_OPTIMIZATION_LEVEL: -O
+          # 再現させてるけど本当に必要？枠
+          MTL_ENABLE_DEBUG_INFO: NO
