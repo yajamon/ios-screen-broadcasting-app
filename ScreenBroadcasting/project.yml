@@ -15,6 +15,24 @@ targets:
         ENABLE_PREVIEWS: YES
         CODE_SIGN_STYLE: Automatic
         DEVELOPMENT_ASSET_PATHS: "\"ScreenBroadcasting/Preview Content\""
+  Upload:
+    templates:
+      - AppExtension
+    sources: Upload
+    dependencies:
+      - sdk: ReplayKit.framework
+  UploadSetupUI:
+    templates:
+      - AppExtension
+    sources: UploadSetupUI
+    dependencies:
+      - sdk: UIKit.framework
+      - sdk: ReplayKit.framework
 
 attributes:
   ORGANIZATIONNAME: Yajamon
+
+targetTemplates:
+  AppExtension:
+    type: app-extension
+    platform: iOS
