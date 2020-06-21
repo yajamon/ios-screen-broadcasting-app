@@ -14,6 +14,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.yajamon.sandbox.$(PRODUCT_NAME)
         ENABLE_PREVIEWS: YES
         CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_ASSET_PATHS: "\"ScreenBroadcasting/Preview Content\""
 
 attributes:
   ORGANIZATIONNAME: Yajamon
