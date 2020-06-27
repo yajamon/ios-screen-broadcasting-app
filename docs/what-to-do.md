@@ -12,3 +12,12 @@
 
 - 画面や音声を録画、ストリーミング配信をするためのフレームワークらしい
 - https://developer.apple.com/documentation/replaykit
+
+## Broadcast Extensionの存在
+
+- Broadcast 用の Extension target が存在する
+    - Broadcast Upload Extension
+        - RPBroadcastSampleHandler を継承したクラスが初期配置
+    - Broadcast Setup UI Extension
+        - UIViewController を継承したクラスが初期配置
+            - UIViewController に extensionContext なるプロパティが生えてるなんて初めて知った…
