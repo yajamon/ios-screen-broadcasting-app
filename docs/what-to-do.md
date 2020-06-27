@@ -21,3 +21,4 @@
     - Broadcast Setup UI Extension
         - UIViewController を継承したクラスが初期配置
             - UIViewController に extensionContext なるプロパティが生えてるなんて初めて知った…
+            - Info.plistに NSExtensionPrincipalClass の 値としてクラス名が指定されている
