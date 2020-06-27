@@ -28,3 +28,7 @@
             - キャプチャ中、逐次呼びだされる模様
             - このハンドラー、 `RPBroadcastSampleHandler` の `processSampleBuffer` と同じパラメータを要求する
 
+### RPScreenRecorderDelegate
+
+- `didStopRecording`
+- `didChangeAvailability`
