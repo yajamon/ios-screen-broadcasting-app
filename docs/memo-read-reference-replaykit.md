@@ -32,3 +32,19 @@
 
 - `didStopRecording`
 - `didChangeAvailability`
+
+### RPPreviewViewController
+
+- 録画したコンテンツをプレビューしたり編集したりする
+- UIViewController を継承しているからそのまま present(viewController:) に送ればよさそう
+- stopRecording の handler に登場
+    - sharedオブジェクトのhandlerが送るパラメータとなると、かなり隠蔽されている
+- モードがある
+    - preview
+    - share
+- `delegate: RPPreviewViewControllerDelegate` を持つ
+
+### RPPreviewViewControllerDelegate
+
+- `didFinish`
+- `didFinishWithActivityTypes`
