@@ -10,6 +10,8 @@ import SwiftUI
 import ReplayKit
 
 struct ContentView: View {
+    let previewCloser = PreviewCloser()
+
     var body: some View {
         VStack {
             Text("Hello, World!")
@@ -25,6 +27,7 @@ struct ContentView: View {
                             return
                         }
 
+                        preview?.previewControllerDelegate = self.previewCloser
                         preview?.modalPresentationStyle = .fullScreen
                         let scene = UIApplication.shared.connectedScenes.first as! UIWindowScene
                         scene.windows.last?.rootViewController?.present(preview!, animated: true, completion: nil)
@@ -32,6 +35,13 @@ struct ContentView: View {
                 }
             }
         }.padding()
+    }
+}
+
+class PreviewCloser: NSObject, RPPreviewViewControllerDelegate {
+    func previewControllerDidFinish(_ previewController: RPPreviewViewController) {
+        previewController.dismiss(animated: true) {
+        }
     }
 }
 
