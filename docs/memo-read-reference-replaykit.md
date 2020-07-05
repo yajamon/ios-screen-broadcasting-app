@@ -46,5 +46,7 @@
 
 ### RPPreviewViewControllerDelegate
 
+- PreviewViewControllerは録画の保存までが仕事
+- ViewControllerを閉じるのはこのDelegateの仕事
 - `didFinish`
 - `didFinishWithActivityTypes`
