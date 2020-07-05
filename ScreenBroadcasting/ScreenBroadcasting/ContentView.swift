@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import ReplayKit
 
 struct ContentView: View {
     var body: some View {
@@ -15,9 +16,19 @@ struct ContentView: View {
             Spacer()
             HStack {
                 Button("Recording") {
+                    RPScreenRecorder.shared().startRecording(handler: nil)
                 }
                 Spacer()
                 Button("RecStop") {
+                    RPScreenRecorder.shared().stopRecording { (preview, error) in
+                        guard error == nil && preview != nil else {
+                            return
+                        }
+
+                        preview?.modalPresentationStyle = .fullScreen
+                        let scene = UIApplication.shared.connectedScenes.first as! UIWindowScene
+                        scene.windows.last?.rootViewController?.present(preview!, animated: true, completion: nil)
+                    }
                 }
             }
         }.padding()
